@@ -17,7 +17,9 @@ const Page = () => {
     <div className="flex flex-col md:flex-row h-screen">
       {/* Form Section */}
       <div className="flex items-center justify-center w-full md:w-1/2 body px-6 py-10">
-        <div className="bg-white/30 border border-white/50  bg-clip-padding backdrop-filter backdrop-blur-sm  p-8 rounded-2xl shadow-md w-full max-w-md space-y-6 paragraph">
+
+
+        <div className="bg-whit border border-white/25  bg-clip-padding backdrop-filter backdrop-blur-sm  p-8 rounded-2xl shadow-md w-full max-w-md space-y-6 paragraph">
           <div className="text-center space-y-2">
             <h2 className="text-2xl font-bold  header bg-gradient-to-b to-blue-400 from-cyan-400 bg-clip-text text-transparent">
               Create Account
@@ -41,7 +43,10 @@ const Page = () => {
             <span className="text-sm text-gray-100">or</span>
             <hr className="flex-grow border-t border-white" />
           </div>
-
+      {/* GLOW*/}
+        <div className="absolute inset-0 flex items-end justify-center">
+          <div className="w-200 h-120 rounded-b-none bg-gradient-to-r -z-1 from-cyan-400 to-blue-400 rounded-full blur-3xl opacity-30"></div>
+        </div>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="flex flex-col">
               <label htmlFor="email" className="mb-1 font-medium text-white">
@@ -51,7 +56,7 @@ const Page = () => {
                 id="email"
                 type="email"
                 placeholder="Enter your Email"
-                className="border border-[#E5E5E5] bg-[#F3F4F6]/30  backdrop-blur-lg rounded-lg px-3 py-2 focus:outline-none"
+                className="border border-[#E5E5E5]/20 bg-[#F3F4F6]/10 text-white/60  backdrop-blur-lg rounded-lg px-3 py-2 focus:outline-none"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -66,7 +71,7 @@ const Page = () => {
                 id="password"
                 type="password"
                 placeholder="Enter your Password"
-                className="border border-[#E5E5E5] bg-[#F3F4F6]/30  backdrop-blur-lg rounded-lg px-3 py-2 focus:outline-none "
+                className="border border-[#E5E5E5]/20 bg-[#F3F4F6]/10 text-white/60  backdrop-blur-lg rounded-lg px-3 py-2 focus:outline-none "
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
