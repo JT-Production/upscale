@@ -15,7 +15,7 @@ const header = (
 
 const footer = (
   <footer className="flex items-center justify-center p-4 bg-gray-800 text-white">
-    © 2023 Up Scale
+    © 2025 Up Scale
   </footer>
 );
 
