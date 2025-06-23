@@ -12,7 +12,7 @@ export default function Button({text, className, icon = <FiArrowUpRight classNam
   return (
     
         <button className="bg-black  text-white pl-5 pr-4 py-1.5 rounded-full  group duration-500  cursor-pointer paragraph text-[16px] flex items-center justify-center  gap-3">
-          {text} <span className='p-3 bg-gradient-to-b to-blue-400 from-cyan-400 rounded-full'>{icon}</span>
+          {text} <span className='p-3 bg-gradient-to-l to-cyan-400 from-indigo-500 rounded-full'>{icon}</span>
         </button>
     
   )

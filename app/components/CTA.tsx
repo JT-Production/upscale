@@ -1,16 +1,16 @@
 import React from 'react'
 import { FaCheck } from 'react-icons/fa6'
-import { FiArrowUpRight } from 'react-icons/fi'
+
 import { GoDotFill } from 'react-icons/go'
-import { IoIosCheckmark } from 'react-icons/io'
+
 import Button from './Button'
 
 export default function Hero() {
   return (
     <div className=' text-3xl min-h-screen  text-white mt-10'>
-      <div className="flex flex-col  items-center justify-center h-100   z-10 relative">
+      <div className="flex flex-col  items-center justify-center h-100 md:px-0  z-10 relative">
         <p className='paragraph text-sm border border-cyan-300 pl-1 pr-2 rounded-full flex items-center gap-0.5 mb-5'><GoDotFill className='text-sm text-cyan-400' /> Powered by Near Protocol </p>
-        <h1 className="text-[42px] font-normal mb-4 text-center max-w-250 header w-3xl"><span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-bold">Upscale</span> : Elevating Success in Web3 - Unleashing Strategic Marketing</h1>
+        <h1 className="md:text-[42px] text-3xl font-normal mb-4 text-center max-w-250 header w-3xl"><span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-bold">Upscale</span> : Elevating Success in Web3 - Unleashing Strategic Marketing</h1>
         <p className="text-[16px] mb-8 max-w-150 text-center paragraph">Efficient and Strightfoward and Hacking Delivered in less Than 5-Days Proven Results or Your money back</p>
         <Button text='Get Started'/>
           <div className='flex  items-center justify-center gap-6 mt-8'>
