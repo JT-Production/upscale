@@ -4,7 +4,7 @@ import Feature from "./components/feature";
 
 const Page = () => {
   return (
-    <div className=" px-[40px]">
+    <div className=" md:px-[40px]">
       <Intro />
       <Feature />
     </div>

@@ -7,7 +7,7 @@ const inter = Montserrat({ subsets: ["latin"] });
 
 export default function NavBar() {
   return (
-    <div className="flex items-center justify-between px-10 py-4 text-white">
+    <div className="flex items-center justify-between md:px-10 px-2 py-4 text-white">
       <Image src={logo} alt="" width={1000} height={10} className="w-30" />
       <div>
         <ul className={"md:flex space-x-10 paragraph text-sm hidden"}>

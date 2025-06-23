@@ -13,8 +13,8 @@ const Table = () => {
   ];
 
   return (
-    <div className="w-[375px] p-4 text-center header space-y-6 border border-white/20 rounded-xl bg-white/5 backdrop-blur-2xl">
-      <h2 className="bg-gradient-to-r text-[20px]  to-blue-600 from-cyan-400 bg-clip-text text-transparent text-sm">
+    <div className="md:w-[385px] w-full p-4 text-center header space-y-6 border border-white/20 rounded-3xl bg-white/5 backdrop-blur-2xl">
+      <h2 className="bg-gradient-to-r text-[20px]  to-blue-600 from-cyan-400 bg-clip-text text-transparent text-sm py-2">
         Certified Users Leaderboard
       </h2>
       <div className="flex items-center justify-between border border-white/20 rounded-full bg-white/5 backdrop-blur-2xl px-2 py-1 space-x-2">
