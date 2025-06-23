@@ -9,13 +9,11 @@ const Page = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log({ email, password });
   };
 
   return (
     <div className="flex flex-col md:flex-row h-screen">
-      {/* Form Section */}
       <div className="flex items-center justify-center w-full md:w-1/2 body px-6 py-10">
         <div className="bg-white/30 border border-white/50  bg-clip-padding backdrop-filter backdrop-blur-sm  p-8 rounded-2xl shadow-md w-full max-w-md space-y-6 paragraph">
           <div className="text-center space-y-2">
