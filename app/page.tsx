@@ -4,6 +4,7 @@ import CTA from "./components/HeroSection";
 import InfiniteSection from "./components/InfiniteSection";
 import ProcessSection from "./components/ProcessSection";
 import Testimonial from "./components/Testimonial";
+import FAQ from "./components/FAQ";
 
 
 
@@ -15,6 +16,7 @@ export default function Home() {
       <InfiniteSection/>
       <ProcessSection/>
       <Testimonial/>
+      <FAQ/>
     </Main>
   );
 }
