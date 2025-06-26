@@ -1,9 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaBrain } from "react-icons/fa6";
 import { FiSend } from "react-icons/fi";
 
-const Input = () => {
+interface InputProps {
+  onSendMessage: (message: string, sender: string) => void;
+}
+
+const Input = ({ onSendMessage }: InputProps) => {
   const [message, setMessage] = useState("");
   const [isTyping, setIsTyping] = useState(false);
 
@@ -14,12 +18,20 @@ const Input = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     if (message.trim()) {
-      // Handle message submission here
-      console.log("Sending message:", message);
+      // Send user message
+      onSendMessage(message, "User");
       setMessage("");
+
+      // Simulate AI typing
+      setIsTyping(true);
+      setTimeout(() => {
+        setIsTyping(false);
+        // Simulate AI response
+        onSendMessage("This is a simulated AI response to: " + message, "AI");
+      }, 1500);
     }
   };
 
