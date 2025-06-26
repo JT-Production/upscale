@@ -96,7 +96,7 @@ const History = () => {
 
       <div className="p-6 pt-4 border-t flex flex-row items-center border-white/10">
         <div className="flex items-center gap-3 text-white/70">
-          <Image src={logo} alt="Scale Ai Logo" width={62} height={62} />
+          <Image src={logo} alt="Scale Ai Logo" width={82} height={82} />
         </div>
         <div className="flex-1 text-white">Scale Ai</div>
       </div>
